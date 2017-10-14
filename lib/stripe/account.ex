@@ -55,6 +55,7 @@ defmodule Stripe.Account do
   }
 
   @schema %{
+    type: [:create, :retrieve],
     business_logo: [:create, :retrieve, :update],
     business_name: [:create, :retrieve, :update],
     business_primary_color: [:create, :retrieve, :update],
