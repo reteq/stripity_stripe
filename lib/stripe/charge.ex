@@ -75,7 +75,8 @@ defmodule Stripe.Charge do
     source_transfer: [:retrieve],
     statement_descriptor: [:create, :retrieve],
     status: [:retrieve],
-    transfer: [:retrieve]
+    transfer: [:retrieve],
+    transfer_group: [:create, :retrieve]
   }
 
   @doc """

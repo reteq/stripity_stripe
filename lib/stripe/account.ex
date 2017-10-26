@@ -129,7 +129,7 @@ defmodule Stripe.Account do
       monthly_anchor: [:create, :retrieve, :update],
       weekly_anchor: [:create, :retrieve, :update]
     },
-    transfer_statement_descriptor: [:create, :retrieve, :update],
+    # transfer_statement_descriptor: [:create, :retrieve, :update],
     verification: %{
       disabled_reason: [:retrieve],
       due_by: [:retrieve],
@@ -145,7 +145,7 @@ defmodule Stripe.Account do
   def schema, do: @schema
 
   @nullable_keys [
-    :metadata, :transfer_statement_descriptor
+    :metadata
   ]
 
   @doc """
